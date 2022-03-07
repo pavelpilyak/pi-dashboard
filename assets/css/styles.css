@@ -1,0 +1,77 @@
+body {
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+}
+
+.red {
+    color: var(--color-red);
+}
+
+.green {
+    color: var(--color-green);
+}
+
+.app {
+    min-height: 100vh;
+
+    background-color: var(--main-bg-color);
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: var(--space-m);
+}
+
+.tile {
+    position: relative;
+
+    padding: var(--space-m);
+    margin: var(--space-s);
+
+    background-color: var(--tile-bg-color);
+    border-radius: var(--tile-border-radius);
+    text-align: center;
+}
+
+.tile-title {
+    font-size: var(--h3-font-size);
+}
+
+.tile-image {
+    position: absolute;
+    top: var(--space-s);
+    right: var(--space-s);
+}
+
+.tile-image img {
+    width: var(--tile-image-size);
+    height: var(--tile-image-size);
+}
+
+.tile-info {
+    font-size: var(--h5-font-size);
+    text-align: left;
+}
+
+.tile-info p {
+    display: flex;
+    align-items: center;
+    column-gap: var(--space-s);
+}
+
+.tile-info img {
+    width: var(--tile-image-size);
+    height: auto;
+}
+
+.tile-info .full-tile-image {
+    width: 100%;
+    height: 100%;
+}
+
+.tile-info-main {
+    font-size: var(--h4-font-size);
+    font-weight: bold;
+}
